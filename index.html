@@ -2,343 +2,592 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" />
+    <title>Syahrul Awaludin | Front-End Developer</title>
+    <link rel="icon" type="image/jpg" href="/images/icon-1.PNG" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/af5476175e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <meta name="author" content="VanderCode Team" />
-    <title>Home | VanderCode</title>
   </head>
-  <body>
-    <!-- Navigasi Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
-      <div class="container">
-        <a class="navbar-brand header" href="#">Vander<span>Code</span></a>
+  <body class="card-footer">
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-color">
+      <div class="container-fluid nav-font pt-1">
+        <div class="col-2 d-none d-sm-none d-md-none d-lg-none d-xl-block"></div>
+        <div class="col-1 d-none d-sm-nonce d-md-none d-lg-block d-xl-none"></div>
+        <a class="navbar-brand col-2 nav-name" href="#main">Syahrul Awaludin</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon position-relative justify-content-sm-end"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link px-md-4 active" aria-current="page" href="index.html">Home</a>
+          <ul class="navbar-nav justify-content-center">
+            <li class="nav-item services">
+              <a class="nav-link active" aria-current="page" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-md-4" href="profile.html">Profile</a>
+              <a class="nav-link active" href="#project">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-md-4" href="#">Contact us</a>
+              <a class="nav-link active" href="#about">About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-md-4" href="#">Support</a>
+              <a class="nav-link active" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item work-link d-none d-lg-block">
+              <a class="nav-link work-link-color" href="/contact.html">Work request <i class="fas fa-chevron-right ps-1"></i></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Content -->
-    <div class="jumbotron" style="padding-top: 90px">
-      <div class="row align-items-center">
-        <div class="col-md-6 align-self-center" style="text-align: center; margin-top: 10px">
-          <div class="main" data-aos="fade-down" data-aos-duration="1000">Bangun Dunia Pendidikan dengan <span> Artificial Intelligence</span></div>
-          <article class="art mt-4" data-aos="fade-down" data-aos-duration="1000">
-            <i>Mari Bergabung Bersama Kami! </i>
-          </article>
-          <button class="button mt-3" type="submit" data-aos="fade-left" data-aos-duration="1000"><span>Explore Now</span></button>
-        </div>
-        <div class="col-md-6">
-          <img src="img/AI-1.png" width="400" style="position: absolute; padding-top: 150px; padding-left: 100px" data-aos="fade-right" data-aos-duration="1000" />
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="width: 500px">
-            <path
-              fill="#142F43"
-              d="M36.3,-61.1C50.1,-54.9,66.3,-51.3,77.2,-41.5C88.1,-31.8,93.6,-15.9,92.3,-0.8C91,14.4,82.8,28.7,71.6,37.8C60.3,46.9,45.9,50.8,33.5,59.7C21,68.7,10.5,82.8,-2.3,86.9C-15.2,90.9,-30.4,84.9,-44.3,76.8C-58.2,68.7,-70.9,58.5,-79.1,45.3C-87.2,32.2,-90.9,16.1,-88.1,1.6C-85.3,-12.9,-76.1,-25.8,-66.4,-36.3C-56.8,-46.8,-46.6,-54.9,-35.4,-62.6C-24.3,-70.4,-12.1,-77.6,-0.4,-76.9C11.3,-76.1,22.5,-67.3,36.3,-61.1Z"
-              transform="translate(100 100)"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-
-    <!--   Pandangan tokoh   -->
-    <div class="tahap text-center" data-aos="fade-down" data-aos-duration="1000">Pandangan Tokoh Publik terhadap <span>Artificial Intelligence</span></div>
-    <section>
-      <div class="swiper mySwiper" data-aos="fade-left" data-aos-duration="1000">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide card" style="width: 18rem">
-            <div class="box single-service">
-              <!-- hiasan -->
-              <div class="detail">
-                <div class="pp">
-                  <img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSVVyE9C3wjVRHtaS9IHCiCJpqSEraahwjlDyt-KgxSh5xEdsVQXUUE7B8vpRQ-" />
-                </div>
-                <h3>Elon Musk<br /><span>CEO Tesla, Inc.</span></h3>
-              </div>
-              <div class="isi">
-                <p>"Saya memiliki pandangan Ai paling canggih dan saya pikir orang harus benar-benar peduli dengan itu. AI adalah risiko fundamental bagi keberadaan peradaban manusia."</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide card" style="width: 18rem">
-            <div class="box single-service">
-              <!-- hiasan -->
-              <div class="detail">
-                <div class="pp">
-                  <img src="https://images.squarespace-cdn.com/content/v1/5bd82ac99b8fe8178d5bc6e9/1578557342342-GVYQHHMTL5MR7LKMXQ2L/Kesuksesan+Jack+Ma.jpg" />
-                </div>
-                <h3>Jack Ma<br /><span>Pebisnis</span></h3>
-              </div>
-              <div class="isi">
-                <p>"Saya sama sekali tidak berpikir AI adalah ancaman. Orang-orang yang takut dengan kecerdasan buatan adalah orang-orang yang mendapatkan ilmu dari kampus."</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide card" style="width: 18rem">
-            <div class="box single-service">
-              <!-- hiasan -->
-              <div class="detail">
-                <div class="pp">
-                  <img src="http://4.bp.blogspot.com/-vEq87FEViRA/VID13HKwZCI/AAAAAAAAG1M/_kuvVrbzkbY/s640/Mark-Zuckerberg.jpg" />
-                </div>
-                <h3>Mark Zuckerberg<br /><span>Programmer</span></h3>
-              </div>
-              <div class="isi">
-                <p>"Aku cukup yakin soal ini. Aku optimis. Aku rasa kalian bisa menciptakan banyak dan membuat dunia jadi lebih baik. Terutama dengan AI, aku sangat optimis."</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide card" style="width: 18rem">
-            <div class="box single-service">
-              <!-- hiasan -->
-              <div class="detail">
-                <div class="pp">
-                  <img src="https://cdn-asset.jawapos.com/wp-content/uploads/2019/12/Mendikbhd-Nadiem-Makariem-Dery-Ridwansah-7.jpg" />
-                </div>
-                <h3>Nadiem Makarim<br /><span>Mendikbud RI</span></h3>
-              </div>
-              <div class="isi">
-                <p>"Dengan perkembangan teknologi saat ini, tantangan pasti tidak mudah di masa depan. Dengan semangat Kampus Merdeka, saya yakin teman-teman nantinya akan menjadi solusi bagi masyarakat Indonesia dan dunia."</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide card" style="width: 18rem">
-            <div class="box single-service">
-              <!-- hiasan -->
-              <div class="detail">
-                <div class="pp">
-                  <img src="https://koinworks.com/wp-content/uploads/2018/12/warren-buffett-cnbc.jpg" />
-                </div>
-                <h3>Warren Buffet<br /><span>Pengusaha</span></h3>
-              </div>
-              <div class="isi">
-                <p>"Saya pasti akan berpikir [kemajuan AI] akan menghasilkan lebih sedikit lapangan kerja secara signifikan di area tertentu. Tapi itu bagus untuk masyarakat [meskipun] mungkin tidak bagus untuk bisnis tertentu.”</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
-
-    <!-- Pengertian artificial intelligence -->
-    <div class="container-xxl">
-      <div class="tahap text-center" data-aos="fade-down" data-aos-duration="1000">Apa Itu <span>Artificial Intelligence?</span></div>
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <img src="img/AI-2.png" style="width: 330px; position: absolute; padding-left: 90px; padding-top: 80px; display: subgrid" data-aos="fade-right" data-aos-duration="1000" />
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="width: 400px">
-            <path
-              fill="#142F43"
-              d="M46.1,-76.2C58.9,-72.4,67.9,-58.4,72.7,-44C77.5,-29.6,78,-14.8,79.6,0.9C81.3,16.7,83.9,33.3,76,42.3C68.1,51.4,49.7,52.8,35.3,60.6C20.9,68.3,10.4,82.5,-0.5,83.3C-11.3,84.1,-22.7,71.5,-33.9,61.9C-45.1,52.2,-56.1,45.5,-65,35.6C-73.9,25.8,-80.8,12.9,-83.7,-1.7C-86.7,-16.3,-85.7,-32.6,-78.1,-44.7C-70.4,-56.7,-56.1,-64.5,-42,-67.5C-27.8,-70.6,-13.9,-68.8,1.4,-71.2C16.6,-73.6,33.3,-80,46.1,-76.2Z"
-              transform="translate(100 100)"
-            />
-          </svg>
-        </div>
-        <div class="col-md-6" style="color: #142f43">
-          <article class="konten">
-            <p class="card user-select-none single-service justify-content" data-aos="fade-up" data-aos-duration="1000">
-              AI adalah sistem komputer (mesin) yang memiliki kecerdasan layaknya manusia. Dalam hal ini, AI mampu melakukan pembelajaran (perolehan informasi dan aturan untuk menggunakan informasi), penalaran (menggunakan aturan untuk
-              mencapai kesimpulan), dan mengoreksi diri secara mandiri. Istilah Artificial Intelligence (AI) pertama kali dikenalkan pada tahun 1956 oleh John McCharty dari MIT (Massachusetts Institute of Technology).
-            </p>
-          </article>
-        </div>
-      </div>
-    </div>
-
-    <!-- Tujuan -->
-    <div class="jumbotron">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#fff"
-          fill-opacity="1"
-          d="M0,128L40,154.7C80,181,160,235,240,234.7C320,235,400,181,480,138.7C560,96,640,64,720,74.7C800,85,880,139,960,138.7C1040,139,1120,85,1200,74.7C1280,64,1360,96,1400,112L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
-        ></path>
-      </svg>
-      <div class="container-xxl">
-        <div data-aos="zoom-out-down" data-aos-duration="1000">
-          <div class="tahap text-center" style="padding-top: 50px; padding-bottom: 50px">Tujuan <span>Artificial Intelligence?</span></div>
-        </div>
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
-              <img src="img/AI.png" style="width: 330px; position: absolute; padding-left: 90px; padding-top: 80px" />
-              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="width: 400px">
-                <path
-                  fill="#142F43"
-                  d="M50.8,-28.9C62.8,-8.5,67.4,16.5,57.7,33.8C48.1,51,24,60.5,-2.1,61.7C-28.3,62.9,-56.6,56,-66.4,38.6C-76.3,21.3,-67.6,-6.4,-53.5,-27.9C-39.3,-49.5,-19.7,-65,-0.1,-64.9C19.4,-64.9,38.8,-49.2,50.8,-28.9Z"
-                  transform="translate(100 100)"
-                />
-              </svg>
-            </div>
-          </div>
-          <div class="col-md-6" style="color: #142f43">
-            <div data-aos="fade-left" data-aos-duration="1000">
-              <article class="konten">
-                <p class="card user-select-none single-service">
-                  Tujuan ilmiah dibentuknya teknologi kecerdasan ini ialah untuk membuat suatu mesin yang mampu memahami kecerdasan seperti bisa memecahkan masalah dengan lebih cepat, lebih teliti, lebih efektif, dan efisien. Adanya AI ini
-                  tentu memudahkan semua orang, terkhusus dalam dunia pendidikan.
-                  <br /><br />
-                  Kehadiran aplikasi berbasis AI memberikan kesempatan untuk belajar kapanpun dan dimanapun, tidak terbatas ruang dan waktu. Selain itu, peserta didik juga berkesempatan untuk menemukan guru yang lain selain pengajarnya di
-                  sekolah. Dengan adanya platform pendidikan online ini dan tersedianya “guru” yang bisa dipilih, peserta didik memiliki kesempatan untuk berkomunikasi dengan guru-guru lain bahkan dengan guru dari negara lain. Pengalaman
-                  belajar dan kemampuan peserta didik tentunya akan dapat berkembang dengan lebih baik.
-                </p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#fff"
-          fill-opacity="1"
-          d="M0,224L40,208C80,192,160,160,240,138.7C320,117,400,107,480,133.3C560,160,640,224,720,224C800,224,880,160,960,149.3C1040,139,1120,181,1200,181.3C1280,181,1360,139,1400,117.3L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
-    </div>
-
-    <!--   Manfaat   -->
-
-    <div class="tahap text-center" data-aos="fade-down" data-aos-duration="1000">Manfaat dari <span>Artificial Intelligence</span></div>
-    <section>
-      <div class="swiper mySwiper" data-aos="fade-left" data-aos-duration="1000">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide card" style="width: 18rem">
-            <img src="img/slide1.jpg" class="card-img-top" />
-            <div class="single-service card">
-              <p style="font-weight: bold">Sarana Mendapatkan Informasi</p>
-              <p style="font-size: small">
-                Biasanya untuk mendapatkan informasi yang akurat mengenai suatu materi tenaga pendidik dan siswa akan merujuk ke suatu website yang telah dipercaya dengan tingkat keakuratan yang tinggi. Salah satunya, lewat portal
-                pendidikan online seperti tambahpinter.com yang menyediakan segudang informasi, baik untuk siswa sekolah, mahasiswa, dan masyarakat umum.
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide card" style="width: 18rem">
-            <img src="img/slide2.jpg" class="card-img-top" />
-            <div class="single-service card">
-              <p style="font-weight: bold">Media Pendukung Pembelajaran</p>
-              <p style="font-size: small">
-                Dengan menerapkan inovasi pembelajaran yang lebih hidup dari adanya teknologi, maka akan sangat mungkin pembelajaran di kelas akan lebih menyenangkan. Siswa juga akan lebih bersemangat untuk menerima materi pebelajaran.
-                <br /><br /><br /><br />
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide card" style="width: 18rem">
-            <img src="img/slide3.jpg" class="card-img-top" />
-            <div class="single-service card">
-              <p style="font-weight: bold">Media Belajar Tanpa Batas</p>
-              <p style="font-size: small">
-                Dalam kondisi yang seperti ini, teknologi berhasil menjadi media yang memungkinkan para siswa dan guru untuk melakukan proses belajar mengajar tanpa bertatap muka secara lagsung. Guru dan murid bisa melakukan proses belajar
-                mengajar lewat video conference, mengirim tugas dan materi lewat group chatting hingga email.
-                <br />
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide card" style="width: 18rem">
-            <img src="img/slide4.jpg" class="card-img-top" />
-            <div class="single-service card">
-              <p style="font-weight: bold">Menilai Tugas</p>
-              <p style="font-size: small">
-                Manfaat lain dari program AI yakni menilai kedua pilihan ganda dan pertanyaan dengan jawaban singkat. Ke depannya, AI juga bisa menilai pertanyaan esai. Oleh sebab itu, para pendidik pun tidak perlu lagi menghabiskan waktu
-                mengerjakan tugas menilai setiap jam karena guru dapat lebih berkonsentrasi pada pengajaran dan interaksi satu lawan satu saja. Siswa juga mendapat hasil nilai langsung melalui AI.
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide card" style="width: 18rem">
-            <img src="img/slide5.jpg" class="card-img-top" />
-            <div class="single-service card">
-              <p style="font-weight: bold">Pembelajaran Lebih Cerdas</p>
-              <p style="font-size: small">
-                Pembelajaran dengan menggunakan AI akan meningkatkan pengalaman belajar peserta didik. Pembelajaran AI dalam sistem individual ini menunjukkan bahwa hal ini dapat meningkatkan fokus siswa. Pasalnya, AI memiliki kemampuan
-                untuk mengajar siswa secara individu dan mengenali area yang dibutuhkan untuk menemukan cara pembelajaran yang tepat pada siswa melalui kecerdasan buatan tersebut.
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide card" style="width: 18rem">
-            <img src="img/slide6.jpg" class="card-img-top" />
-            <div class="single-service card">
-              <p style="font-weight: bold">Identifikasi Peserta Didik</p>
-              <p style="font-size: small">
-                Kecerdasan AI pun juga dapat mengidentifikasi konsep seperti apa yang tidak dipahami oleh peserta didik. Sehingga, nantinya AI bisa melakukan penyesuaian untuk menemukan cara baru dalam membantu pembelajaran peserta didik.
-                <br /><br /><br />
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <br />
+    <!--Background container-->
+    <div class="container-fluid background-main" id="main">
+      <!--Main image-->
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-sm-12 col-md-6">
-            <h6>About</h6>
-            <p class="text-justify">VanderCode adalah sebuah tim yang bergerak di bidang programming dan design dari SMKN 1 Subang. Tim ini baru dibentuk pada tahun 2021.</p>
-          </div>
-        </div>
-        <hr />
-      </div>
-      <div class="link">
-        <div class="row justify-content-center">
-          <div class="col-md-5 col-sm-6 col-xs-12">
-            <p>&copy; Copyright 2021 | <a href="#" class="text-decoration-none text-white">VanderCode</a>.</p>
+        <div class="row icon-margin">
+          <div class="col" align="center" data-aos="fade-down" data-aos-duration="1000">
+            <img class="img-fluid icon mt-5" src="/images/icon-1.png" alt="Syahrul Awaludin" />
           </div>
         </div>
       </div>
-    </footer>
 
-    <!-- aosjs -->
+      <!--Name-->
+      <div class="container position-relative move-name d-none d-lg-block">
+        <div class="row row-cols-auto" data-aos="fade-right" data-aos-duration="1000">
+          <div class="col-1 d-md-block d-none d-lg-none"></div>
+          <div class="col-sm-2 d-lg-block d-md-none"></div>
+          <div class="row name-card">
+            <div class="col-sm-1 col-sm-4">
+              <h3 class="pt-4 d-none d-lg-block hand">👋</h3>
+              <h3 class="pt-1 d-sm-none hand">👋</h3>
+            </div>
+            <div class="col-sm-1 col-sm-6 p-2">Hi! I am <span class="name">Syahrul!</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!--UI designer-->
+      <div class="container position-relative d-none d-lg-block ui-design-card">
+        <div class="row row-cols-auto" data-aos="fade-left" data-aos-duration="1000">
+          <div class="col-7"></div>
+          <div class="col skills-bubble name-card">UI Designer 📐</div>
+        </div>
+      </div>
+
+      <!--Cyber Security-->
+      <div class="container position-relative d-none d-lg-block artist-move">
+        <div class="row row-cols-auto" data-aos="fade-left" data-aos-duration="1000">
+          <div class="col-6 d-none d-sm-none d-md-block d-lg-block"></div>
+          <div class="col artist name-card">Cyber Security 🔒</div>
+        </div>
+      </div>
+
+      <!--Name card for mobile-->
+      <div class="container d-block d-lg-none">
+        <div class="row row-cols-auto" data-aos="fade-right" data-aos-duration="1000">
+          <div class="col-3"></div>
+          <div class="col-6" align="center">
+            <div class="col-sm-1 col-sm-6 p-2 salute" align="center">👋 Hi! I am <span class="name">Syahrul!</span></div>
+          </div>
+        </div>
+      </div>
+      <!--Tittle-->
+      <div class="container position-relative moving-tittle">
+        <div class="row">
+          <!--Name Card for Mobile-->
+          <div class="col-12">
+            <h1 class="tittle d-sm-block d-md-none d-lg-block" align="center">Front-End Developer</h1>
+            <h2 class="tittle-smaller d-none d-sm-none d-md-block d-lg-none" align="center">Front-End Developer</h2>
+          </div>
+          <div class="col-12 based-in" align="center">
+            <h2 class="size-based">Based in Subang, West Java.</h2>
+          </div>
+        </div>
+      </div>
+
+      <!--Button Let's work-->
+      <div class="container button-lets-work">
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-6" align="center">
+            <a href="/contact.html" class="nav-link work-link-color lets-work mb-3" data-aos="fade-right" data-aos-duration="1000">Let's work! ></a>
+          </div>
+
+          <!--Line vertical-->
+          <div class="col-3"></div>
+          <div class="container d-flex justify-content-center">
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Quote-->
+    <div class="container-fluid quote hide-me" id="quote">
+      <div class="container d-flex justify-content-center">
+        <div class="line-yellow"></div>
+      </div>
+      <div class="row" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-12">
+          <h3 align="center" class="size-quote first-part-quote">Is not just what it looks like and feels like.</h3>
+        </div>
+        <div class="col-12">
+          <h3 align="center" class="size-quote second-part-quote">Is how it works.</h3>
+          <p align="center" class="steve-jobs">- Steve Jobs</p>
+        </div>
+      </div>
+      <!--Line vertically-->
+      <div class="container d-flex justify-content-center">
+        <div class="line-purple"></div>
+      </div>
+    </div>
+
+    <!--Skills container-->
+    <div class="container-fluid services-space">
+      <!--Line guidance-->
+      <div class="container d-flex justify-content-start">
+        <div class="col-1"></div>
+        <div class="line-horizontal purple" id="services"></div>
+      </div>
+      <div class="container d-flex justify-content-start">
+        <div class="col-1"></div>
+        <div class="line-vertical purple adjust"></div>
+      </div>
+      <!--Tittles-->
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-6">
+          <h2 class="services-head pt-3">My services</h2>
+        </div>
+        <div class="col-5"></div>
+        <!--New row-->
+        <div class="col-1"></div>
+        <div class="col-6">
+          <h3 class="tittle-services">The most creative intuitive workmate.</h3>
+        </div>
+
+        <!--Icon-->
+        <div class="col-5"></div>
+        <div class="col-2 ms-4"></div>
+        <div class="col-6" data-aos="fade-right" data-aos-duration="1000">
+          <img class="img-fluid memoji" src="images/icon-2.png" alt="Memoji of Mili" />
+        </div>
+
+        <!--Icons around-->
+
+        <div class="container icons-first d-none d-sm-block">
+          <div class="row">
+            <div class="col-1 me-4"></div>
+            <div class="col-3">
+              <i class="fas fa-code code"></i>
+            </div>
+            <div class="col-1 ms-1">
+              <i class="fab fa-bootstrap bootstrap"></i>
+            </div>
+          </div>
+        </div>
+        <div class="container d-none d-sm-block">
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-2">
+              <i class="fab fa-js-square js"></i>
+            </div>
+            <div class="col">
+              <i class="fab fa-github github"></i>
+            </div>
+          </div>
+        </div>
+        <!--Icons skills for mobile-->
+        <div class="container d-block d-sm-none">
+          <div class="row d-flex justify-content-center">
+            <div class="col-2 size-skill-mobile">
+              <i class="fas fa-code code-mobile"></i>
+            </div>
+            <div class="col-2 size-skill-mobile">
+              <i class="fab fa-bootstrap bootstrap-mobile floating"></i>
+            </div>
+            <div class="col-2 size-skill-mobile">
+              <i class="fab fa-js-square js-mobile"></i>
+            </div>
+            <div class="col-2 size-skill-mobile">
+              <i class="fab fa-github github-mobile"></i>
+            </div>
+          </div>
+        </div>
+        <!--Skills grid-->
+        <div class="container-fluid">
+          <div class="row">
+            <!--Developer skills-->
+            <div class="col-6 ms-5" data-aos="fade-left" data-aos-duration="1000"></div>
+            <div class="col-sm-5 skill first-space" align="left">
+              <div class="container card-skills w-75">
+                <i class="fas fa-mouse-pointer pe-1 mouse"></i>
+                <span class="developer-tittle">Developer Skills</span>
+                <div class="col description-skill developer-skills" align="left">A full knowledge of HTML / CSS and Javascript. I make responsive applications with Bootstrap.</div>
+              </div>
+            </div>
+            <!--UI Design-->
+            <div class="col-6 ms-5"></div>
+            <div class="col-sm-5 skill second-space" align="left">
+              <div class="container card-skills w-75">
+                <i class="fas fa-object-ungroup pe-1 design"></i>
+                <span class="ui-tittle">UI Design</span>
+                <div class="col description-skill ui-design" align="left">A love for design and a good eye for creativity. I have proficiency in wireframing, color theory and visual communication.</div>
+              </div>
+            </div>
+            <!--2D artist-->
+            <div class="col-6 ms-5"></div>
+            <div class="col-sm-5 skill third-space" align="left">
+              <div class="container card-skills w-75">
+                <i class="fas fa-lock pe-1 art"></i>
+                <span class="artist-tittle">Cyber Security</span>
+                <div class="col description-skill artist-description" align="left">3+ years of penetration testing experience.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Line vertically-->
+      <div class="container">
+        <div class="row">
+          <div class="col-9"></div>
+          <div class="col-1 ms-2">
+            <div class="line-blue-vertical space-line-projects d-none d-sm-none d-md-none d-lg-block"></div>
+          </div>
+          <div class="col-6"></div>
+          <!--Horizontal line-->
+          <div class="col-2 d-none d-sm-none d-md-none d-lg-block">
+            <div class="line-horizontal-project blue"></div>
+          </div>
+          <!--Vertical Line-->
+          <div class="col-10 ms-2 d-block d-sm-block d-xl-block">
+            <div class="line-blue-vertical projects-margin" id="project"></div>
+          </div>
+        </div>
+      </div>
+      <!--Space-->
+      <div class="container moving-project-one">
+        <div class="row"></div>
+      </div>
+      <!--My Projects container-->
+      <div class="container-fluid moving-up-projects moving-project-one">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <h3 class="project-tittle">My projects</h3>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-sm-10 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+            <h4 class="best-work">A selection of my best projects.</h4>
+          </div>
+          <!--1st project-->
+          <div class="col-6 d-none d-lg-block d-xl-block">
+            <a href="https://dribbble.com/syahrulawaludin_" target="_blank">
+              <img
+                class="project-one img-fluid"
+                src="
+                https://syahruldev.000webhostapp.com/assets/img/project1.jpg"
+                alt="Image of Joe Hisaishi website"
+            /></a>
+          </div>
+          <!--1st project mobile-->
+          <div class="col-12 d-flex justify-content-center d-md-block d-lg-none d-xl-none" align="center">
+            <a href="https://dribbble.com/syahrulawaludin_" target="_blank">
+              <img
+                class="project-one-mobile img-fluid"
+                src="
+                https://syahruldev.000webhostapp.com/assets/img/project1.jpg"
+                alt="Image of Joe Hisaishi website"
+              />
+            </a>
+          </div>
+          <!--2nd Project-->
+          <div class="col-6 d-none d-lg-block d-xl-block">
+            <a href="https://dribbble.com/syahrulawaludin_" target="_blank">
+              <img
+                class="project-two img-fluid"
+                src="
+                https://syahruldev.000webhostapp.com/assets/img/project2.jpg"
+                alt="Image of Joe Hisaishi website"
+              />
+            </a>
+          </div>
+          <!--2nd project mobile-->
+          <div class="col-12 d-flex justify-content-center d-md-block d-lg-none d-xl-none" align="center">
+            <a href="https://dribbble.com/syahrulawaludin_" target="_blank">
+              <img
+                class="project-two-mobile img-fluid"
+                src="
+                https://syahruldev.000webhostapp.com/assets/img/project2.jpg"
+                alt="Image of Joe Hisaishi website"
+              />
+            </a>
+          </div>
+          <!--3rd project-->
+          <div class="col-6 d-none d-lg-block d-xl-block">
+            <a href="https://dribbble.com/syahrulawaludin_" target="_blank">
+              <img
+                class="project-one img-fluid"
+                src="
+                https://syahruldev.000webhostapp.com/assets/img/project3.jpg"
+                alt="Image of Joe Hisaishi website"
+            /></a>
+          </div>
+          <!--3rd project mobile-->
+          <div class="col-12 d-flex justify-content-center d-md-block d-lg-none d-xl-none" align="center">
+            <a href="https://dribbble.com/syahrulawaludin_" target="_blank">
+              <img
+                class="project-one-mobile img-fluid"
+                src="
+                https://syahruldev.000webhostapp.com/assets/img/project3.jpg"
+                alt="Image of Joe Hisaishi website"
+              />
+            </a>
+          </div>
+          <!--4th Project-->
+          <div class="col-6 d-none d-lg-block d-xl-block">
+            <a href="https://dribbble.com/syahrulawaludin_" target="_blank">
+              <img
+                class="project-two img-fluid"
+                src="
+                https://syahruldev.000webhostapp.com/assets/img/project4.jpg"
+                alt="Image of Joe Hisaishi website"
+              />
+            </a>
+          </div>
+          <!--4th project mobile-->
+          <div class="col-12 d-flex justify-content-center d-md-block d-lg-none d-xl-none" align="center">
+            <a href="https://www.shecodes.io/workshops/shecodes-plus-e97de30a-83ab-4a9d-a11c-2d346438a9bd/projects/494427" target="_blank">
+              <img
+                class="project-two-mobile img-fluid"
+                src="
+                https://syahruldev.000webhostapp.com/assets/img/project4.jpg"
+                alt="Image of Joe Hisaishi website"
+              />
+            </a>
+          </div>
+          <!--Message at the bottom-->
+          <div class="col-12 d-flex justify-content-center" align="center">
+            <p class="curious-message">Curious about the process?</p>
+          </div>
+          <div class="col-12 d-flex justify-content-center visit-position">
+            <a href="https://github.com/syahrulawaludin" target="_blank"><p class="visit-message">Visit my Github</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!--Vertical Line-->
+      <div class="container">
+        <div class="row">
+          <div class="col-12"></div>
+        </div>
+      </div>
+      <!--About me -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <div class="line-yellow-vertical space-line-projects" id="about"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <h3 class="about-me-tittle">About me</h3>
+          </div>
+          <div class="col-12 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+            <h3 class="tittle-services mt-3">Welcome to Syahrul World</h3>
+          </div>
+          <!--Cards of About me-->
+          <div class="row margin-cards" data-aos="fade-right" data-aos-duration="1000">
+            <div class="col-sm-4 d-block d-sm-none d-md-none d-lg-block">
+              <div class="card shadow-pink">
+                <div class="card-body" align="center">
+                  <h5 class="card-title card-yellow">Education</h5>
+                  <p class="card-info">Student of SMKN 1 Subang, software engineering department since 2020.</p>
+                </div>
+              </div>
+            </div>
+            <!--Sm for landscape-->
+            <div class="col-sm-6 d-none d-sm-block d-md-none">
+              <div class="card shadow-pink">
+                <div class="card-body" align="center">
+                  <h5 class="card-title card-yellow">Education</h5>
+                  <p class="card-info">Student of SMKN 1 Subang, software engineering department since 2020</p>
+                </div>
+              </div>
+            </div>
+            <!--Mobile version -->
+            <div class="col-sm-6 d-none d-md-block d-lg-none">
+              <div class="card shadow-pink">
+                <div class="card-body landscape-padding" align="center">
+                  <h5 class="card-title card-yellow">Education</h5>
+                  <p class="card-info">Student of SMKN 1 Subang, software engineering department since 2020</p>
+                </div>
+              </div>
+            </div>
+            <!--Designer-->
+            <div class="col-sm-4 d-block d-sm-none d-md-none d-lg-block">
+              <div class="card shadow-blue">
+                <div class="card-body" align="center">
+                  <h5 class="card-title card-blue">Designer</h5>
+                  <p class="card-info">Freelance designer since 2020, A love for UI/UX design</p>
+                </div>
+              </div>
+            </div>
+            <!--Sm for landscape-->
+            <div class="col-sm-6 d-none d-sm-block d-md-none">
+              <div class="card shadow-blue">
+                <div class="card-body" align="center">
+                  <h5 class="card-title card-blue">Designer</h5>
+                  <p class="card-info">Freelance designer since 2020, A love for UI/UX design</p>
+                </div>
+              </div>
+            </div>
+            <!--Mobile version-->
+            <div class="col-sm-6 d-none d-md-block d-lg-none">
+              <div class="card shadow-blue">
+                <div class="card-body" align="center">
+                  <h5 class="card-title card-blue">Illustration</h5>
+                  <p class="card-info">Freelancer illustrator since 2018. A love for portraits and character design</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 d-block d-sm-none d-md-none d-lg-block" align="center"></div>
+            <!--2nd row of cards-->
+            <div class="col-sm-4 margin-second-cards d-block d-sm-none d-md-none d-lg-block">
+              <div class="card shadow-purple">
+                <div class="card-body" align="center">
+                  <h5 class="card-title card-purple">Networking</h5>
+                  <p class="card-info">Created a plataform on Instagram to share my journey and connect with everyone</p>
+                </div>
+              </div>
+            </div>
+
+            <!--Sm for landscape-->
+            <div class="col-sm-6 margin-second-cards d-none d-sm-block d-md-none">
+              <div class="card shadow-purple">
+                <div class="card-body" align="center">
+                  <h5 class="card-title card-purple">Networking</h5>
+                  <p class="card-info">Created a plataform on Instagram to share my journey and connect with everyone</p>
+                </div>
+              </div>
+            </div>
+            <!--Mobile Version-->
+            <div class="col-sm-6 margin-second-cards d-none d-md-block d-lg-none">
+              <div class="card shadow-purple">
+                <div class="card-body" align="center">
+                  <h5 class="card-title card-purple">Networking</h5>
+                  <p class="card-info">Created a plataform on Instagram to share my journey and connect with everyone</p>
+                </div>
+              </div>
+            </div>
+            <!--Music-->
+            <div class="col-sm-4 margin-second-cards d-block d-sm-none d-md-none d-lg-block">
+              <div class="card shadow-green">
+                <div class="card-body" align="center">
+                  <h5 class="card-title card-green">Games</h5>
+                  <p class="card-info">I also enjoy playing videogames as a hobby</p>
+                </div>
+              </div>
+            </div>
+            <!--sm for landscape-->
+            <div class="col-sm-6 margin-second-cards d-none d-sm-block d-md-none">
+              <div class="card shadow-green">
+                <div class="card-body" align="center">
+                  <h5 class="card-title card-green">Games</h5>
+                  <p class="card-info">I also enjoy playing videogames as a hobby</p>
+                </div>
+              </div>
+            </div>
+            <!--Mobile Version-->
+            <div class="col-sm-6 margin-second-cards d-none d-md-block d-lg-none">
+              <div class="card shadow-green">
+                <div class="card-body" align="center">
+                  <h5 class="card-title card-green">Games</h5>
+                  <p class="card-info">I also enjoy playing videogames as a hobby</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4"></div>
+          </div>
+        </div>
+      </div>
+      <!--Memoji About me-->
+      <div class="container d-none d-lg-block">
+        <div class="row d-flex justify-content-end">
+          <div class="col-3 moving-memoji" data-aos="fade-left" data-aos-duration="1000">
+            <img src="images/icon-1.png" class="memoji-about img-fluid" alt="icon of cat" />
+          </div>
+        </div>
+      </div>
+      <!--Memoji about me for mobile-->
+      <div class="container">
+        <div class="row d-flex justify-content-center d-block d-sm-block d-md-none" align="center">
+          <div class="col-12 memoji-mobile">
+            <img src="images/icon-1.png" class="img-fluid" alt="icon of cat" />
+          </div>
+        </div>
+      </div>
+      <!--About me quote-->
+      <div class="container moving-quote-mobile">
+        <div class="row" align="center">
+          <div class="col-12 d-flex justify-content-center" align="center">
+            <h3 class="about-me-quote">Multitalented. Intuitive. Dedicated.</h3>
+          </div>
+          <div class="col-12 moving-click d-flex justify-content-center" align="center">
+            <p class="color-gradient-yellow">
+              Wanna know more? Visit my
+              <a href="https://www.instagram.com/syahrulawaludin_/" target="_blank" class="link-insta">Instagram</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <div class="container-fluid background-footer">
+      <div class="row">
+        <!--Line-->
+        <div class="container d-flex justify-content-center">
+          <div class="line-footer" id="contact"></div>
+        </div>
+        <div class="col-12 padding-footer">
+          <h3 align="center" class="size-quote second-part-quote mobile-size-footer" data-aos="zoom-in" data-aos-duration="1000">Let's work together!</h3>
+          <div class="col-12" align="center">
+            <form action="/contact.html" data-aos="zoom-in" data-aos-duration="1000">
+              <button type="submit" value="Go to Contact page" class="btn btn-outline-primary">Contact me <i class="fas fa-chevron-right ps-1"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Footer links-->
+    <div class="container-fluid border-top-footer">
+      <div class="row">
+        <div class="col-4">
+          <p class="footer-description">©2022 Syahrul Awaludin</p>
+        </div>
+        <div class="col-2">
+          <p class="footer-description">Front-End Developer, UI Designer</p>
+        </div>
+        <div class="col-6" align="center">
+          <a href="https://github.com/syahrulawaludin" target="_blank" class="footer-description">Github</a>
+          <a href="mailto:syahrulawaludin72@gmail.com" class="footer-description">Email</a>
+          <a href="https://www.linkedin.com/" target="_blank" class="footer-description">LinkedIn</a>
+          <a href="https://www.instagram.com/syahrulawaludin_" target="_blank" class="footer-description">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/javascript/jsc.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
-
-    <!--   Bootstrap   -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <!-- swiperjs -->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        grabCursor: true,
-        coverflowEffect: {
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 2,
-          slideShadows: true,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-      });
     </script>
   </body>
 </html>
